@@ -1,0 +1,37 @@
+grumphp:
+    tasks: 
+        phplint:
+            exclude: []
+            jobs: ~
+            short_open_tag: false
+            ignore_patterns: []
+            triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
+        phpcs:
+            standard: []
+            severity: ~
+            error_severity: ~
+            warning_severity: ~
+            tab_width: ~
+            report: full
+            report_width: ~
+            whitelist_patterns: []
+            encoding: ~
+            ignore_patterns: []
+            sniffs: []
+            triggered_by: [php]
+            exclude: []
+        phpmd:
+            whitelist_patterns: []
+            exclude: []
+            report_format: text
+            ruleset: ['cleancode', 'codesize', 'naming']
+            triggered_by: ['php']
+        phpstan:
+            autoload_file: ~
+            configuration: ~
+            level: null
+            force_patterns: []
+            ignore_patterns: []
+            triggered_by: ['php']
+            memory_limit: "-1"
+            use_grumphp_paths: true
